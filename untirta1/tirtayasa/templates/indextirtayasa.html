@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>UNTIRTA</h1>
+    <nav>
+      <div class="logo">
+      </div> 
+      <ul>
+        <li><a href="/profil">PROFIL</a></li>
+        <li><a href="/faperta">FAPERTA</a></li>
+        <li><a href="/feb">FEB</a></li>
+        <li><a href="/fh">FH</a></li>
+        <li><a href="/fisip">FISIP</a></li>
+        <li><a href="/fk">FK</a></li>
+        <li><a href="/fkip">FKIP</a></li>
+        <li><a href="/ft">FT</a></li>
+        <li><a href="/pascasarjana">PASCASARJANA</a></li>
+      </ul>
+    </nav>
+    <img src="\static\img\fotountirta.png" height="800px">
+</body>
+
+</html>
+<style>
+    body {
+      background-image: linear-gradient(to left, #98c2cc, #2532e7);
+      margin-left: 50px;
+      margin-right: 50px;
+      padding: 0;
+  }
+  
+  nav {
+      top: 0;
+      left: 0;
+      position: fixed;
+      height: 80px;
+      width: 100%;
+      box-sizing: border-box;
+      background: rgba(0, 0, 0, 0.5);
+      border-bottom: 1px solid rgb(10, 10, 10);
+  }
+  
+  .logo {
+      float: left;
+      height: 10px;
+      font-size: 36px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: rgb(3, 3, 3);
+      padding: 20px 20px;
+      justify-content: space-around;
+  }
+  
+  nav ul {
+      margin: 0;
+      padding: 0;
+      float: right;
+      list-style: none;
+      display: flex;
+  }
+  
+  nav ul li a {
+      font-size: 20px;
+      font-weight: bold;
+      color: rgb(7, 7, 7);
+      line-height: 80px;
+      text-decoration: none;
+      padding: 12px 30px;
+  }
+  
+  nav ul li a:hover {
+      border-radius: 15px;
+      background: rgba(192, 28, 28, 0.8);
+  }
+  </style>
