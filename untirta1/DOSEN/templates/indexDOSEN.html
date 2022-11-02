@@ -1,0 +1,45 @@
+
+
+
+
+<body>
+    <center>
+        <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;">DOSEN</h1>
+    </center>
+    <br>
+
+
+    <center>
+        <table border="1">
+            <tr style="background-color: rgba(137, 137, 137, 0.695);"> 
+                <th>No</th>
+                <th>NIP</th>
+                <th>Nama</th>
+                <th>TTL</th>
+                <th>Alamat</th>
+                <th>Fakultas</th>
+                <th>prodi</th>
+                <th>Email</th>
+                <th>Foto</th>
+            </tr>
+            {% for dosen in lecturer %}
+             <tr style="background-color: rgba(213, 211, 211, 0.568);">
+                <td><center> {{dosen.no}} </center></td>
+                <td>{{dosen.nip}}</td>
+                <td>{{dosen.nama}}</td>
+                <td>{{dosen.ttl}}</td>
+                <td>{{dosen.alamat}}</td>
+                <td>{{dosen.fakultas}}</td>
+                <td>{{dosen.prodi}}</td>
+                <td>{{dosen.email}}</td>
+                <td>
+                    {% if dosen.foto %}
+                    <img src="{{ dosen.foto.url }}" width="60px">
+                    {% endif %}
+                </td>
+
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>

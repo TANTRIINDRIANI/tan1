@@ -15,6 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from Mahasiswa.views import prodiMahasiswa
+from TENDIK.views import prodiTENDIK
 from tirtayasa.views import proditirtayasa
 from faperta.views import prodifaperta
 from feb.views import prodifeb
@@ -25,6 +27,9 @@ from fkip.views import prodifkip
 from ft.views import prodift
 from pascasarjana.views import prodipascasarjana
 from profil.views import prodiprofil
+from DOSEN.views import prodiDOSEN, tambah_DOSEN
+from TENDIK.views import prodiTENDIK
+from Mahasiswa.views import prodiMahasiswa
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -38,4 +43,9 @@ urlpatterns = [
     path('ft/', prodift),
     path('pascasarjana/', prodipascasarjana),
     path('profil/', prodiprofil),
+    path('DOSEN/', prodiDOSEN),
+    path('tambah-DOSEN/', tambah_DOSEN),
+    path('TENDIK/', prodiTENDIK),
+    path('Mahasiswa/', prodiMahasiswa),
+      
 ]

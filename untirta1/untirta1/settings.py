@@ -47,6 +47,9 @@ INSTALLED_APPS = [
     'ft',
     'pascasarjana',
     'profil',
+    'DOSEN',
+    'TENDIK',
+    'Mahasiswa',
 
 ]
 

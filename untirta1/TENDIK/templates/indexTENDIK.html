@@ -1,0 +1,43 @@
+
+
+
+
+<body>
+    <center>
+        <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;">TENDIK</h1>
+    </center>
+    <br>
+
+
+    <center>
+        <table border="1">
+            <tr style="background-color: rgba(137, 137, 137, 0.695);"> 
+                <th>No</th>
+                <th>NIP</th>
+                <th>Nama</th>
+                <th>TTL</th>
+                <th>Alamat</th>
+                <th>Unit</th>
+                <th>Email</th>
+                <th>Foto</th>
+            </tr>
+            {% for mahasiswa in lecturer %}
+             <tr style="background-color: rgba(213, 211, 211, 0.568);">
+                <td><center> {{tendik.no}} </center></td>
+                <td>{{tendik.nip}}</td>
+                <td>{{tendik.nama}}</td>
+                <td>{{tendik.ttl}}</td>
+                <td>{{tendik.alamat}}</td>
+                <td>{{tendik.unit}}</td>
+                <td>{{tendik.email}}</td>
+                <td>
+                    {% if mahasiswa.foto %}
+                    <img src="{{ tendik.foto.url }}" width="60px">
+                    {% endif %}
+                </td>
+
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
